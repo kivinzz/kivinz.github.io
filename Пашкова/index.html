@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ksy</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+
+
+        <span class="menu-btn">
+            &equiv;
+        </span>
+
+        <nav>
+            <a href="#" class="link">Главная</a>
+            <a href="#love" class="link">Обо мне</a>
+            <a href="#streams" class="link">Мои стримы</a>
+        </nav>
+
+        <a href="#" class="btn">Связь с нами</a>
+
+
+    </header>
+    <main>
+        <div class="banner">
+
+            <h1>Я - геймер</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Velit ab quod accusamus consequuntur
+                temporibus, rem reiciendis, <br>
+                cupiditate aliquam nostrum eum <br>
+                fugiat illum veritatis nemo facere vel quae
+                sapiente adipisci quibusdam!</p>
+            <a href="#" class="btn">Узнать детали</a>
+
+
+        </div>
+
+        <div class="games" id="love">
+            <h2>Лучшие игры:</h2>
+
+
+
+            <div class="boxes">
+                <div>
+                    <img src="img/rfhnbyrf buhf1.jpg" alt="">
+                    <span>100 подписчиков</span>
+
+                </div>
+
+                <div>
+                    <img src="img/Обложка_компьютерной_игры_Cyberpunk_2077.jpg" alt="">
+                    <span>100 подписчиков</span>
+
+                </div>
+
+                <div>
+                    <img src="img/ba87af54ef0e5694a98d640c57e7f80370b0b88f.jpg" alt="">
+                    <span>100 подписчиков</span>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="streams" id="streams">
+
+            <h2>Смотрите лучшее:</h2>
+
+            <div class="slider">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpeg" alt="">
+                <img src="img/3.jpeg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpeg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpeg" alt="">
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <a href="#" target="_blank">
+            <img src="img/1.svg" alt="">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="img/2.svg" alt="">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="img/3.svg" alt="">
+        </a>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+
+
+
+    </script>
+
+    <script>
+        $(".menu-btn").click(function () {
+            $("nav").toggleClass("open");
+        })
+    </script>
+</body>
+
+</html>
